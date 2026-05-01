@@ -81,3 +81,22 @@ def subu(dest, src1, src2):
     print(shamt, end="")
     print(funct)
 
+# ------------------ Função AND ------------------
+# Tive que mudar o nome para "And" pois estava dando erro quando deixava "and"
+def And(dest, src1, src2):
+   
+    rd = dest.replace('$', '').replace(',', '')
+    rs = src1.replace('$', '').replace(',', '')
+    rt = src2.replace('$', '').replace(',', '')
+    
+    opcode = 0
+    shamt = 0
+    funct = 36 # Este é o código específico para o And
+    
+    # Imprimimos sem pular linha, seguindo a ordem: opcode, rs, rt, rd, shamt, funct
+    print(opcode, end="")
+    print(globals()[rs](), end="") 
+    print(globals()[rt](), end="") 
+    print(globals()[rd](), end="") 
+    print(shamt, end="")
+    print(funct)
