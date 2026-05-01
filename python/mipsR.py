@@ -182,7 +182,7 @@ def mul(dest, src1, src2):
 def sll(dest, src1, src2):
    
     rd = dest.replace('$', '').replace(',', '')
-    rt = src2.replace('$', '').replace(',', '')
+    rt = src1.replace('$', '').replace(',', '')
     
     opcode = 0
     rs = 0
@@ -201,7 +201,7 @@ def sll(dest, src1, src2):
 def srl(dest, src1, src2):
    
     rd = dest.replace('$', '').replace(',', '')
-    rt = src2.replace('$', '').replace(',', '')
+    rt = src1.replace('$', '').replace(',', '')
     
     opcode = 0
     rs = 0
