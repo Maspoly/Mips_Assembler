@@ -1,0 +1,69 @@
+#arquivo onde estão as funções que retornam o número do registrador, para facilitar a conversão das instruções
+#os globals()[nome_do_registrador]() são usados para chamar a função que retorna o número do registrador,
+#passando o nome do registrador como string, e retornando o número do registrador
+#exemplo: globals()["t1"]() retorna 9, que é o número do registrador t1
+#os globals()[rs]() e globals()[rt]() virão para cá
+def zero():
+    return 0
+def at():
+    return 1
+def v0():
+    return 2
+def v1():
+    return 3
+def a0():
+    return 4
+def a1():
+    return 5
+def a2():
+    return 6
+def a3():
+    return 7
+def t0():
+    return 8
+def t1():
+    return 9
+def t2():
+    return 10
+def t3():
+    return 11
+def t4():
+    return 12
+def t5():
+    return 13
+def t6():
+    return 14
+def t7():
+    return 15
+def s0():
+    return 16
+def s1():
+    return 17
+def s2():
+    return 18
+def s3():
+    return 19
+def s4():
+    return 20
+def s5():
+    return 21
+def s6():
+    return 22
+def s7():
+    return 23
+def t8():
+    return 24
+def t9():
+    return 25
+def k0():
+    return 26
+def k1():
+    return 27
+def gp():
+    return 28
+def sp():
+    return 29
+def fp():
+    return 30
+def ra():
+    return 31
