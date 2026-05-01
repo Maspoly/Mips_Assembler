@@ -1,0 +1,26 @@
+#arquivo onde estão as funções que convertem as instruções do tipo R, como addi, lw, sw, etc
+
+from registradores import * #importamos os registradores, para poder usar as funções que retornam o número do registrador
+
+
+# ------------------ Função ADD ------------------
+def add(dest, src1, src2):
+    # DICA: O último argumento (src2) no Assembly geralmente não tem vírgula.
+    # Usar o .replace() é um pouco mais seguro e limpo que cortar com [:-1],
+    # pois funciona tendo a vírgula ali ou não!
+    rd = dest.replace('$', '').replace(',', '')
+    rs = src1.replace('$', '').replace(',', '')
+    rt = src2.replace('$', '').replace(',', '')
+    
+    opcode = 0
+    shamt = 0
+    funct = 32 # Este é o código específico para a soma (add) no MIPS
+    
+    # Imprimimos sem pular linha, seguindo a ordem: opcode, rs, rt, rd, shamt, funct
+    print(opcode, end="")
+    print(globals()[rs](), end="") 
+    print(globals()[rt](), end="") 
+    print(globals()[rd](), end="") 
+    print(shamt, end="")
+    print(funct)
+
