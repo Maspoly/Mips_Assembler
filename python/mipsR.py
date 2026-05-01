@@ -217,21 +217,20 @@ def srl(dest, src1, src2):
     print(funct)
 
 # ------------------ Função JR ------------------
-def jr(dest, src1, src2):
-   
-    rd = dest.replace('$', '').replace(',', '')
-    rs = src1.replace('$', '').replace(',', '')
-    rt = src2.replace('$', '').replace(',', '')
+def jr(src):
+    rs = src.replace('$', '').replace(',', '')
     
     opcode = 0
+    rt = 0
+    rd = 0
     shamt = 0
     funct = 8 # Este é o código específico para o jr
     
     # Imprimimos sem pular linha, seguindo a ordem: opcode, rs, rt, rd, shamt, funct
     print(opcode, end="")
     print(globals()[rs](), end="") 
-    print(globals()[rt](), end="") 
-    print(globals()[rd](), end="") 
+    print(rt, end="") 
+    print(rd, end="") 
     print(shamt, end="")
     print(funct)
 
@@ -270,3 +269,4 @@ def mflo(dest):
     print(globals()[rd](), end="") 
     print(shamt, end="")
     print(funct)
+
