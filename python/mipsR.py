@@ -296,7 +296,7 @@ def multu(src1, src2):
     opcode = 0
     rd = 0
     shamt = 0
-    funct = 2 # Este é o código específico para o multu
+    funct = 25 # Este é o código específico para o multu
     
     # Imprimimos sem pular linha, seguindo a ordem: opcode, rs, rt, rd, shamt, funct
     print(opcode, end="")
@@ -305,3 +305,22 @@ def multu(src1, src2):
     print(rd, end="") 
     print(shamt, end="")
     print(funct)
+
+# ------------------ Função DIV ------------------
+def div(src1, src2):
+    rs = src1.replace('$', '').replace(',', '')
+    rt = src2.replace('$', '').replace(',', '')
+    
+    opcode = 0
+    rd = 0
+    shamt = 0
+    funct = 26 # Este é o código específico para o div
+    
+    # Imprimimos sem pular linha, seguindo a ordem: opcode, rs, rt, rd, shamt, funct
+    print(opcode, end="")
+    print(globals()[rs](), end="") 
+    print(globals()[rt](), end="") 
+    print(rd, end="") 
+    print(shamt, end="")
+    print(funct)
+
