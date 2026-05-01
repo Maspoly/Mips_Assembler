@@ -324,3 +324,20 @@ def div(src1, src2):
     print(shamt, end="")
     print(funct)
 
+# ------------------ Função DIVU ------------------
+def divu(src1, src2):
+    rs = src1.replace('$', '').replace(',', '')
+    rt = src2.replace('$', '').replace(',', '')
+    
+    opcode = 0
+    rd = 0
+    shamt = 0
+    funct = 27 # Este é o código específico para o divu
+    
+    # Imprimimos sem pular linha, seguindo a ordem: opcode, rs, rt, rd, shamt, funct
+    print(opcode, end="")
+    print(globals()[rs](), end="") 
+    print(globals()[rt](), end="") 
+    print(rd, end="") 
+    print(shamt, end="")
+    print(funct)
