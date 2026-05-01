@@ -197,3 +197,22 @@ def sll(dest, src1, src2):
     print(shamt, end="")
     print(funct)
 
+# ------------------ Função SRL ------------------
+def srl(dest, src1, src2):
+   
+    rd = dest.replace('$', '').replace(',', '')
+    rs = src1.replace('$', '').replace(',', '')
+    rt = src2.replace('$', '').replace(',', '')
+    
+    opcode = 0
+    shamt = 0
+    funct = 2 # Este é o código específico para o srl
+    
+    # Imprimimos sem pular linha, seguindo a ordem: opcode, rs, rt, rd, shamt, funct
+    print(opcode, end="")
+    print(globals()[rs](), end="") 
+    print(globals()[rt](), end="") 
+    print(globals()[rd](), end="") 
+    print(shamt, end="")
+    print(funct)
+
