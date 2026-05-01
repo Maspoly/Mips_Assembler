@@ -235,3 +235,21 @@ def jr(dest, src1, src2):
     print(shamt, end="")
     print(funct)
 
+# ------------------ Função MFHI ------------------
+def mfhi(dest):
+   
+    rd = dest.replace('$', '').replace(',', '')
+    
+    opcode = 0
+    rs = 0
+    rt = 0
+    shamt = 0
+    funct = 16 # Este é o código específico para o mfhi
+    
+    # Imprimimos sem pular linha, seguindo a ordem: opcode, rs, rt, rd, shamt, funct
+    print(opcode, end="")
+    print(rs, end="") 
+    print(rt, end="")
+    print(globals()[rd](), end="") 
+    print(shamt, end="")
+    print(funct)
