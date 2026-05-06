@@ -28,7 +28,7 @@ MIPS_ASSEMBLER/
 │
 ├── ciclos.csv
 ├── README.md
-└── arquivo.asm
+└── exemplo.asm
 ```
 
 ---
@@ -52,13 +52,13 @@ cd MIPS_ASSEMBLER
 ### Executar o montador
 
 ```bash
-python src/montador.py arquivo.asm -b
+python src/montador.py exemplo.asm -b
 ```
 
 ou
 
 ```bash
-python src/montador.py arquivo.asm -h
+python src/montador.py exemplo.asm -h
 ```
 
 ---
@@ -68,7 +68,7 @@ python src/montador.py arquivo.asm -h
 ### Binário
 
 ```bash
-python src/montador.py arquivo.asm -b
+python src/montador.py exemplo.asm -b
 ```
 
 Gera um arquivo `.bin` contendo as instruções em binário.
@@ -76,7 +76,7 @@ Gera um arquivo `.bin` contendo as instruções em binário.
 ### Hexadecimal
 
 ```bash
-python src/montador.py arquivo.asm -h
+python src/montador.py exemplo.asm -h
 ```
 
 Gera um arquivo `.hex` contendo as instruções em hexadecimal.
@@ -87,8 +87,8 @@ Gera um arquivo `.hex` contendo as instruções em hexadecimal.
 
 Ao executar o programa:
 
-* `arquivo.bin` → saída em binário
-* `arquivo.hex` → saída em hexadecimal
+* `exemplo.bin` → saída em binário
+* `exemplo.hex` → saída em hexadecimal
 
 O nome do arquivo gerado é baseado no nome do arquivo `.asm` utilizado na entrada.
 
