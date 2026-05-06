@@ -1,0 +1,138 @@
+#arquivo onde estão as funções que retornam o número do registrador, para facilitar a conversão das instruções
+#os globals()[nome_do_registrador]() são usados para chamar a função que retorna o número do registrador,
+#passando o nome do registrador como string, e retornando o número do registrador
+#exemplo: globals()["t1"]() retorna 9, que é o número do registrador t1
+#os globals()[rs]() e globals()[rt]() virão para cá
+
+def zero():
+    return 0
+def at():
+    return 1
+def v0():
+    return 2
+def v1():
+    return 3
+def a0():
+    return 4
+def a1():
+    return 5
+def a2():
+    return 6
+def a3():
+    return 7
+def t0():
+    return 8
+def t1():
+    return 9
+def t2():
+    return 10
+def t3():
+    return 11
+def t4():
+    return 12
+def t5():
+    return 13
+def t6():
+    return 14
+def t7():
+    return 15
+def s0():
+    return 16
+def s1():
+    return 17
+def s2():
+    return 18
+def s3():
+    return 19
+def s4():
+    return 20
+def s5():
+    return 21
+def s6():
+    return 22
+def s7():
+    return 23
+def t8():
+    return 24
+def t9():
+    return 25
+def k0():
+    return 26
+def k1():
+    return 27
+def gp():
+    return 28
+def sp():
+    return 29
+def fp():
+    return 30
+def ra():
+    return 31
+
+def get_registradores():
+    return {
+        "$zero": 0,
+        "$at": 1,
+        "$v0": 2,
+        "$v1": 3,
+        "$a0": 4,
+        "$a1": 5,
+        "$a2": 6,
+        "$a3": 7,
+        "$t0": 8,
+        "$t1": 9,
+        "$t2": 10,
+        "$t3": 11,
+        "$t4": 12,
+        "$t5": 13,
+        "$t6": 14,
+        "$t7": 15,
+        "$s0": 16,
+        "$s1": 17,
+        "$s2": 18,
+        "$s3": 19,
+        "$s4": 20,
+        "$s5": 21,
+        "$s6": 22,
+        "$s7": 23,
+        "$t8": 24,
+        "$t9": 25,
+        "$k0": 26,
+        "$k1": 27,
+        "$gp": 28,
+        "$sp": 29,
+        "$fp": 30,
+        "$ra": 31,
+        "$0": 0,
+        "$1": 1,
+        "$2": 2,
+        "$3": 3,
+        "$4": 4,
+        "$5": 5,
+        "$6": 6,
+        "$7": 7,
+        "$8": 8,
+        "$9": 9,
+        "$10": 10,
+        "$11": 11,
+        "$12": 12,
+        "$13": 13,
+        "$14": 14,
+        "$15": 15,
+        "$16": 16,
+        "$17": 17,
+        "$18": 18,
+        "$19": 19,
+        "$20": 20,
+        "$21": 21,
+        "$22": 22,
+        "$23": 23,
+        "$24": 24,
+        "$25": 25,
+        "$26": 26,
+        "$27": 27,
+        "$28": 28,
+        "$29": 29,
+        "$30": 30,
+        "$31": 31
+    }
